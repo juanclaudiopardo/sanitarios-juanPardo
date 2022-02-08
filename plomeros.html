@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="imagenes del negocio/Copia de flavicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <title>Plomeros</title>
+  </head>
+  <body>
+    <header class="header">
+      <div>
+        <a href="index.html">
+          <img src="imagenes del negocio/flavicon.png" alt="logo del negocio" class="logo" />
+        </a>
+      </div>
+      <nav class="navegador">
+        <ul class="navegador-ul">
+          <li><a class="navegador-link" href="quienes.html">Quienes somos</a></li>
+          <li><a class="navegador-link" href="producto.html">Productos</a></li>
+          <li><a class="navegador-link" href="plomeros.html">Plomeros</a></li>
+          <li><a class="navegador-link" href="instalacion.html">Instalación</a></li>
+          <li><a class="navegador-link" href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <button class="btn-mov-nav"><ion-icon class="icon-mov-nav" name="menu-outline"></ion-icon> <ion-icon class="icon-mov-nav" name="close-outline"></ion-icon></button>
+    </header>
+
+    <script>
+      const btnNavEl = document.querySelector(".btn-mov-nav");
+      const headerEl = document.querySelector(".header");
+
+      btnNavEl.addEventListener("click", function () {
+        headerEl.classList.toggle("nav-abierto");
+      });
+    </script>
+
+    <section class="section-plomero">
+      <div class="contenedor">
+        <h1 class="tituloPrincipal">Plomeros</h1>
+        <p class="plomero-parrafo">En esta seccion te recomendaremos plomeros de confianza que podran solucionarte el problema que tengas</p>
+      </div>
+
+      <div class="contenedor plomero-flex">
+        <div class="plomeros">
+          <img src="plomeros/plomero1.jpg" alt="foto de un plomero" class="plomero-img" />
+          <div class="plomero-contenedor">
+            <ul class="plomero-ul">
+              <li class="plomero-li"><ion-icon name="person-circle-outline" class="plomero-icono"></ion-icon>Nombre: Eduardo Scali</li>
+              <li class="plomero-li"><ion-icon name="call-outline" class="plomero-icono"></ion-icon>Contacto: 11-4-148-3114</li>
+              <li class="plomero-li"><ion-icon name="build-outline" class="plomero-icono"></ion-icon>Plomero,gasista, cloaquista</li>
+              <li class="plomero-li"><ion-icon name="star-outline" class="plomero-icono"></ion-icon>Valoracion: <strong>3.5</strong></li>
+            </ul>
+          </div>
+        </div>
+        <div class="plomeros">
+          <img src="plomeros/plomero2.jpg" alt="foto de un plomero" class="plomero-img" />
+          <div class="plomero-contenedor">
+            <ul class="plomero-ul">
+              <li class="plomero-li"><ion-icon name="person-circle-outline" class="plomero-icono"></ion-icon>Nombre: Pedro Duarte</li>
+              <li class="plomero-li"><ion-icon name="call-outline" class="plomero-icono"></ion-icon>Contacto: 11-4-234-3114</li>
+              <li class="plomero-li"><ion-icon name="build-outline" class="plomero-icono"></ion-icon>Plomero,gasista</li>
+              <li class="plomero-li"><ion-icon name="star-outline" class="plomero-icono"></ion-icon>Valoracion: <strong>4</strong></li>
+            </ul>
+          </div>
+        </div>
+        <div class="plomeros">
+          <img src="plomeros/plomero3.jpg" alt="foto de un plomero" class="plomero-img" />
+          <div class="plomero-contenedor">
+            <ul class="plomero-ul">
+              <li class="plomero-li"><ion-icon name="person-circle-outline" class="plomero-icono"></ion-icon>Nombre: Claudio Civelo</li>
+              <li class="plomero-li"><ion-icon name="call-outline" class="plomero-icono"></ion-icon>Contacto: 11-4-222-3114</li>
+              <li class="plomero-li"><ion-icon name="build-outline" class="plomero-icono"></ion-icon>Gasista, cloaquista</li>
+              <li class="plomero-li"><ion-icon name="star-outline" class="plomero-icono"></ion-icon>Valoracion: <strong>4.5</strong></li>
+            </ul>
+          </div>
+        </div>
+        <div class="plomeros">
+          <img src="plomeros/plomero4.jpg" alt="foto de un plomero" class="plomero-img" />
+          <div class="plomero-contenedor">
+            <ul class="plomero-ul">
+              <li class="plomero-li"><ion-icon name="person-circle-outline" class="plomero-icono"></ion-icon>Nombre: Samuel Perez</li>
+              <li class="plomero-li"><ion-icon name="call-outline" class="plomero-icono"></ion-icon>Contacto: 11-4-148-4414</li>
+              <li class="plomero-li"><ion-icon name="build-outline" class="plomero-icono"></ion-icon>Plomero,gasista, cloaquista</li>
+              <li class="plomero-li"><ion-icon name="star-outline" class="plomero-icono"></ion-icon>Valoracion: <strong>2.5</strong></li>
+            </ul>
+          </div>
+        </div>
+        <div class="plomeros">
+          <img src="plomeros/plomero5.jpg" alt="foto de un plomero" class="plomero-img" />
+          <div class="plomero-contenedor">
+            <ul class="plomero-ul">
+              <li class="plomero-li"><ion-icon name="person-circle-outline" class="plomero-icono"></ion-icon>Nombre: Rodolfo Mendez</li>
+              <li class="plomero-li"><ion-icon name="call-outline" class="plomero-icono"></ion-icon>Contacto: 11-4-148-7777</li>
+              <li class="plomero-li"><ion-icon name="build-outline" class="plomero-icono"></ion-icon>Plomero, cloaquista</li>
+              <li class="plomero-li"><ion-icon name="star-outline" class="plomero-icono"></ion-icon>Valoracion: <strong>4.5</strong></li>
+            </ul>
+          </div>
+        </div>
+        <div class="plomeros">
+          <img src="plomeros/plomero6.jpg" alt="foto de un plomero" class="plomero-img" />
+          <div class="plomero-contenedor">
+            <ul class="plomero-ul">
+              <li class="plomero-li"><ion-icon name="person-circle-outline" class="plomero-icono"></ion-icon>Nombre: Victor Calvo</li>
+              <li class="plomero-li"><ion-icon name="call-outline" class="plomero-icono"></ion-icon>Contacto: 11-4-148-2999</li>
+              <li class="plomero-li"><ion-icon name="build-outline" class="plomero-icono"></ion-icon>Plomero,gasista, cloaquista</li>
+              <li class="plomero-li"><ion-icon name="star-outline" class="plomero-icono"></ion-icon>Valoracion: <strong>3</strong></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <address>
+        <a href="tel:4-262-6106" class="link-info">Tel: 4-262-6104</a>
+        <a href="tel:+541155063190" class="link-info">Whatsapp:(+5411) 5506-3190</a>
+        <a href="mailto:josefrecinosanitarios@yahoo.com.ar" class="link-info">E-mail: josefrecinosanitarios@yahoo.com.ar</a>
+        <a href="https://goo.gl/maps/q3FpLWMQQAcH5jaAA" class="link-info" target="_blank">Direccion: Mendoza 2629 Lanus oeste</a>
+      </address>
+
+      <ul class="redes-sociales-lista">
+        <li>
+          <a href="https://www.instagram.com/?hl=es-la" target="_blank"><ion-icon name="logo-instagram" class="icono-redes"></ion-icon></a>
+        </li>
+        <li>
+          <a href="https://es-la.facebook.com/" target="_blank"><ion-icon name="logo-facebook" class="icono-redes"></ion-icon></a>
+        </li>
+      </ul>
+    </footer>
+  </body>
+</html>

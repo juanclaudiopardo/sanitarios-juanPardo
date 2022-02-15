@@ -368,36 +368,29 @@ body {
 .footer {
   padding: 9.6rem 0;
   margin: 0 auto;
-  background-color: #fff;
+  background-color: white;
 }
-
-.footer__list {
+address {
   display: flex;
   flex-direction: column;
   padding: 0 9.6rem;
-  list-style: none;
 }
 
-.footer__item {
-  display: flex;
-  align-items: center;
-  color: var(--color-gris-claro);
-  margin-bottom: 4rem;
+.link-info:link,
+.link-info:visited {
+  text-decoration: none;
+  color: #767676;
+  margin-bottom: 1.2rem;
   transition: all 0.4s;
   font-size: 1.8rem;
 }
 
-.footer__item:hover {
-  color: var(--color-primario);
+.link-info:hover,
+.link-info:active {
+  color: #8b1212;
 }
 
-.footer__icon {
-  height: 3rem;
-  width: 3rem;
-  margin-right: 2rem;
-}
-
-.redes-sociales__lista {
+.redes-sociales-lista {
   display: flex;
   gap: 1.6rem;
   justify-content: center;
@@ -405,15 +398,15 @@ body {
   list-style: none;
 }
 
-.redes-sociales__icono {
+.icono-redes {
   height: 5rem;
   width: 5rem;
-  color: var(--color-gris-claro);
+  color: #767676;
   transition: all 0.3s;
 }
 
-.redes-sociales__icono:hover {
-  color: var(--color-primario);
+.icono-redes:hover {
+  color: #8b1212;
   transform: translateY(-2rem);
 }
 
@@ -459,7 +452,7 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    height: 150vh;
+    height: 100vh;
     transform: translateX(100%);
 
     display: flex;

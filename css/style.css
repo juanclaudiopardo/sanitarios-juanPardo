@@ -6,50 +6,64 @@ color de fondo de pantalla:#f3e7e7
 font-family: 'Rubik', sans-serif; 
               "lato"
  */
+:root {
+  --color-primario: #8b1212;
+  --color-primario-med: #a24141;
+  --color-primario-claro: #f3e7e7;
 
-* {
+  --color-gris: #363636;
+}
+/*----------------------- RESETEO------------------------------ */
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  box-sizing: inherit;
 }
 
 html {
   font-size: 62.5%;
   overflow-x: hidden;
+  box-sizing: border-box;
 }
 body {
   font-family: "Rubik", sans-serif;
   overflow-x: hidden;
+  line-height: 1.6;
 }
-/* -----reutilizables--------- */
-.contenedor {
-  max-width: 130rem;
-  padding: 0 3.2rem;
-  margin: 0 auto;
-}
-.tituloPrincipal {
+
+/* ------------------------------TIPOGRAFIA ----------------*/
+.titulo-principal {
   font-size: 5.2rem;
   font-weight: 700;
+  text-transform: uppercase;
   margin-bottom: 4.8rem;
-  letter-spacing: -0.5px;
-  color: #8b1212;
+  margin-top: -3rem;
+  display: inline-block;
+  background-image: linear-gradient(to right, var(--color-primario), var(--color-primario-med));
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
 }
+
+.parrafo-principal {
+  font-size: 1.8rem;
+  color: var(--color-gris);
+  margin-bottom: 1.8rem;
+  margin-top: -2rem;
+}
+
+/* -----SECCIONES--------- */
+
 .section-quienesSomos,
 .section-producto,
 .section-instalacion,
 .section-contacto,
 .section-plomero {
-  background-color: #f3e7e7;
-  padding: 4.8rem 0 6.4rem 0;
-}
-.contacto-parrafo,
-.instalacion-parrafo,
-.plomero-parrafo {
-  font-size: 1.8rem;
-  line-height: 1.8;
-  color: #8b1212;
-  margin-bottom: 1.8rem;
-  margin-top: -2rem;
+  background-color: var(--color-primario-claro);
+  padding: 4.8rem 6.4rem;
+  margin: 0 auto;
 }
 
 /* --------------index--------- */
@@ -119,7 +133,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 2.4rem 4.8rem;
+  padding: 1.4rem 4.8rem;
   background-color: #f3e7e7;
 }
 
@@ -135,7 +149,7 @@ body {
 }
 
 .logo {
-  height: 6.4rem;
+  height: 5.4rem;
 }
 
 .navegador-ul {
@@ -178,7 +192,7 @@ body {
 
 /* ------quienesSomos------- */
 
-.quienesSomos {
+.quienes-somos {
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin: 0 auto;
@@ -186,61 +200,8 @@ body {
   align-items: center;
   gap: 9.6rem;
 }
-.quienesSomos-img {
+.quienes-somos__img {
   width: 100%;
-}
-
-.quienesSomos-descripcion {
-  font-size: 2rem;
-  line-height: 1.5;
-  margin-bottom: 15rem;
-  color: #363636;
-}
-
-/* -------------footer------------- */
-.footer {
-  padding: 9.6rem 0;
-  margin: 0 auto;
-  background-color: white;
-}
-address {
-  display: flex;
-  flex-direction: column;
-  padding: 0 9.6rem;
-}
-
-.link-info:link,
-.link-info:visited {
-  text-decoration: none;
-  color: #767676;
-  margin-bottom: 1.2rem;
-  transition: all 0.4s;
-  font-size: 1.8rem;
-}
-
-.link-info:hover,
-.link-info:active {
-  color: #8b1212;
-}
-
-.redes-sociales-lista {
-  display: flex;
-  gap: 1.6rem;
-  justify-content: center;
-  margin-top: 4.8rem;
-  list-style: none;
-}
-
-.icono-redes {
-  height: 5rem;
-  width: 5rem;
-  color: #767676;
-  transition: all 0.3s;
-}
-
-.icono-redes:hover {
-  color: #8b1212;
-  transform: translateY(-2rem);
 }
 
 /* --------Contacto----------- */
@@ -357,6 +318,10 @@ address {
   margin-bottom: 4.8rem;
   margin-top: -4.8rem;
 }
+.mrg-mayor {
+  margin-top: -6.6rem;
+  margin-bottom: 6rem;
+}
 /* -----plomeros-------------- */
 .plomero-flex {
   display: grid;
@@ -398,6 +363,72 @@ address {
   width: 3.4rem;
 }
 
+/* -------------footer------------- */
+.footer {
+  padding: 9.6rem 0;
+  margin: 0 auto;
+  background-color: #fff;
+}
+address {
+  display: flex;
+  flex-direction: column;
+  padding: 0 9.6rem;
+}
+
+.link-info:link,
+.link-info:visited {
+  text-decoration: none;
+  color: #767676;
+  margin-bottom: 1.2rem;
+  transition: all 0.4s;
+  font-size: 1.8rem;
+}
+
+.link-info:hover,
+.link-info:active,
+.footer__item:hover {
+  color: #8b1212;
+}
+.footer__list {
+  display: flex;
+  flex-direction: column;
+  padding: 0 9.6rem;
+  list-style: none;
+}
+.footer__icon {
+  height: 3rem;
+  width: 3rem;
+  margin-right: 2rem;
+}
+.footer__item {
+  display: flex;
+  align-items: center;
+  color: #767676;
+  margin-bottom: 1.2rem;
+  transition: all 0.4s;
+  font-size: 1.8rem;
+}
+
+.redes-sociales-lista {
+  display: flex;
+  gap: 1.6rem;
+  justify-content: center;
+  margin-top: 4.8rem;
+  list-style: none;
+}
+
+.icono-redes {
+  height: 5rem;
+  width: 5rem;
+  color: #767676;
+  transition: all 0.3s;
+}
+
+.icono-redes:hover {
+  color: #8b1212;
+  transform: translateY(-2rem);
+}
+
 /* ----------media query---------- */
 
 @media (max-width: 1212px) {
@@ -422,12 +453,12 @@ address {
   }
 
   /* index */
-  .quienesSomos {
+  .quienes-somos {
     grid-template-columns: 1fr;
     gap: 3.2rem;
   }
 
-  .quienesSomos-descripcion {
+  .parrafo-principal {
     margin-bottom: 2.4rem;
   }
   .btn-mov-nav {

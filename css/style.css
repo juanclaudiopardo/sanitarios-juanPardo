@@ -1,18 +1,16 @@
-/*  
- color principal: #8b1212 
-color de fondo de pantalla:#f3e7e7 
-*/
-/*
-font-family: 'Rubik', sans-serif; 
-              "lato"
- */
+/* font-family: 'Rubik', sans-serif; 
+              "lato" */
+
 :root {
   --color-primario: #8b1212;
+  --color-primario-hoover: #b97171;
   --color-primario-med: #a24141;
   --color-primario-claro: #f3e7e7;
+  --color-primario-contacto: #d1a0a0;
 
   --color-gris: #363636;
   --color-gris-claro: #767676;
+  --color-gris-input: #555;
 }
 /*----------------------- RESETEO------------------------------ */
 *,
@@ -55,7 +53,7 @@ body {
   margin-top: -2rem;
 }
 
-/* -----SECCIONES--------- */
+/* ------------------------SECCIONES--------- */
 
 .section-quienesSomos,
 .section-producto,
@@ -67,7 +65,7 @@ body {
   margin: 0 auto;
 }
 
-/* --------------index--------- */
+/* ----------------------------INDEX---------------- */
 .header-img {
   background-image: linear-gradient(to right bottom, rgba(197, 137, 137, 0.8), rgba(162, 65, 65, 0.8)), url(../imagenes\ del\ negocio/img-neg.jpg);
   height: 95vh;
@@ -135,17 +133,17 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 1.4rem 4.8rem;
-  background-color: #f3e7e7;
+  background-color: var(--color-primario-claro);
 }
 
-/* -----------Header---------- */
+/* -------------------------------NAVBAR---------- */
 
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 2.4rem 4.8rem;
-  background-color: #f3e7e7;
+  background-color: var(--color-primario-claro);
   position: relative;
 }
 
@@ -153,25 +151,25 @@ body {
   height: 5.4rem;
 }
 
-.navegador-ul {
+.navegador__ul {
   list-style: none;
   display: flex;
   gap: 3.2rem;
   align-items: center;
 }
 
-.navegador-link:link,
-.navegador-link:visited {
+.navegador__link:link,
+.navegador__link:visited {
   text-decoration: none;
   font-weight: 500;
   font-size: 1.8rem;
-  color: #8b1212;
+  color: var(--color-primario);
   transition: all 0.4s;
 }
 
-.navegador-link:hover,
-.navegador-link:active {
-  color: #b97171;
+.navegador__link:hover,
+.navegador__link:active {
+  color: var(--color-primario-hoover);
 }
 
 /* icono del menu en moviles------ */
@@ -185,7 +183,7 @@ body {
 .icon-mov-nav {
   height: 4.8rem;
   width: 4.8rem;
-  color: #8b1212;
+  color: var(--color-primario);
 }
 .icon-mov-nav[name="close-outline"] {
   display: none;
@@ -210,7 +208,7 @@ body {
 .contacto {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  background-color: #d1a0a0;
+  background-color: var(--color-primario-contacto);
   border-radius: 11px;
   box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.05);
 
@@ -233,7 +231,7 @@ body {
   display: block;
   font-size: 1.8rem;
   margin-bottom: 1.2rem;
-  color: #8b1212;
+  color: var(--color-primario);
   font-weight: 700;
 }
 .form-contacto input,
@@ -244,7 +242,7 @@ body {
   font-family: inherit;
   border: none;
   border-radius: 9px;
-  color: #555;
+  color: var(--color-gris-input);
   outline: none;
   display: block;
   border-bottom: 3px solid transparent;
@@ -264,7 +262,7 @@ body {
   border-radius: 9px;
   border: none;
   cursor: pointer;
-  background-color: #8b1212;
+  background-color: var(--color-primario);
   color: white;
   transition: all 0.4s;
   width: 100%;
@@ -272,7 +270,7 @@ body {
 
 .boton:hover {
   background-color: #fff;
-  color: #8b1212;
+  color: var(--color-primario);
 }
 
 .contacto-img {
@@ -353,7 +351,7 @@ body {
 }
 .plomero-li {
   font-size: 1.8rem;
-  color: #8b1212;
+  color: var(--color-primario);
   display: flex;
   align-items: center;
   gap: 1.6rem;
@@ -379,7 +377,7 @@ address {
 .link-info:link,
 .link-info:visited {
   text-decoration: none;
-  color: #767676;
+  color: var(--color-gris-claro);
   margin-bottom: 1.2rem;
   transition: all 0.4s;
   font-size: 1.8rem;
@@ -387,7 +385,7 @@ address {
 
 .link-info:hover,
 .link-info:active {
-  color: #8b1212;
+  color: var(--color-primario);
 }
 
 .redes-sociales-lista {
@@ -401,12 +399,12 @@ address {
 .icono-redes {
   height: 5rem;
   width: 5rem;
-  color: #767676;
+  color: var(--color-gris-claro);
   transition: all 0.3s;
 }
 
 .icono-redes:hover {
-  color: #8b1212;
+  color: var(--color-primario);
   transform: translateY(-2rem);
 }
 
@@ -448,6 +446,8 @@ address {
   }
   .navegador {
     background-color: rgba(255, 255, 255, 0.9);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(10px);
     position: absolute;
     top: 0;
     left: 0;
@@ -459,9 +459,11 @@ address {
     align-items: center;
     justify-content: center;
     transition: all 0.5s ease-in;
-
+    position: fixed;
     opacity: 0;
+
     pointer-events: none;
+
     visibility: hidden;
   }
 
@@ -480,20 +482,20 @@ address {
     display: none;
   }
 
-  .navegador-ul {
+  .navegador__ul {
     flex-direction: column;
     gap: 4.8rem;
   }
-  .navegador-link:link,
-  .navegador-link:visited {
+  .navegador__link:link,
+  .navegador__link:visited {
     font-size: 3rem;
+  }
+  .header-img {
+    clip-path: none;
   }
 }
 
 @media (max-width: 700px) {
-  .header-img {
-    clip-path: none;
-  }
   .contacto {
     grid-template-columns: 1fr;
     height: auto;

@@ -189,7 +189,7 @@ body {
   display: none;
 }
 
-/* ------quienesSomos------- */
+/* --------------------------------QUIENESOMOS------- */
 
 .quienes-somos {
   display: grid;
@@ -203,7 +203,7 @@ body {
   width: 100%;
 }
 
-/* --------Contacto----------- */
+/* -------------------------------------CONTACTO----------- */
 
 .contacto {
   display: grid;
@@ -216,26 +216,26 @@ body {
   overflow: hidden;
 }
 
-.contacto-texto {
+.contacto__texto {
   padding: 3.2rem;
 }
 
-.form-contacto {
+.contacto__form {
   display: grid;
   grid-template-columns: 1fr;
   row-gap: 2.4rem;
   align-items: center;
 }
 
-.form-contacto label {
+.contacto__form label {
   display: block;
   font-size: 1.8rem;
   margin-bottom: 1.2rem;
   color: var(--color-primario);
   font-weight: 700;
 }
-.form-contacto input,
-.form-contacto textarea {
+.contacto__form input,
+.contacto__form textarea {
   width: 100%;
   padding: 1.8rem;
   font-size: 1.8rem;
@@ -248,10 +248,10 @@ body {
   border-bottom: 3px solid transparent;
 }
 
-.form-contacto input:focus {
+.contacto__form input:focus {
   border-bottom: 3px solid green;
 }
-.form-contacto input:focus:invalid {
+.contacto__form input:focus:invalid {
   border-bottom: 3px solid red;
 }
 
@@ -273,15 +273,15 @@ body {
   color: var(--color-primario);
 }
 
-.contacto-img {
+.contacto__img {
   background-image: url("../imagenes\ del\ negocio/contacto.webp");
   background-size: cover;
   background-position: center;
 }
 
-/* ---------producto---------- */
+/* ------------------------------PRODUCTO---------- */
 
-.producto-ul {
+.producto__ul {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
   list-style: none;
@@ -289,7 +289,7 @@ body {
   justify-items: center;
 }
 
-.producto-img {
+.producto__img {
   height: 16rem;
   width: 16rem;
   border-radius: 50%;
@@ -297,14 +297,14 @@ body {
 .padding-tit {
   padding: 2.4rem 0 3.2rem 0;
 }
-.producto-link {
+.producto__link {
   transition: all 0.3s;
 }
-.producto-link:hover {
+.producto__link:hover {
   transform: translateY(-2rem);
 }
 
-/* ---------instalacion------ */
+/* ---------INSTALACION------ */
 
 .instalacion-flex {
   display: flex;
@@ -321,35 +321,35 @@ body {
   margin-top: -6.6rem;
   margin-bottom: 6rem;
 }
-/* -----plomeros-------------- */
+/* ---------------------------------PLOMEROS-------------- */
 .plomero-flex {
   display: grid;
   padding-top: 3.4rem;
   padding-bottom: 6.4rem;
   gap: 6.4rem;
   align-items: center;
-  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
 }
-.plomeros {
+.plomero {
   background-color: white;
   border-radius: 11px;
   overflow: hidden;
   box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
 }
-.plomero-contenedor {
+.plomero__contenedor {
   padding: 3.2rem;
 }
-.plomero-img {
+.plomero__img {
   margin-bottom: 1.6rem;
   width: 100%;
 }
-.plomero-ul {
+.plomero__ul {
   list-style: none;
   display: flex;
   flex-direction: column;
   gap: 2.4rem;
 }
-.plomero-li {
+.plomero__li {
   font-size: 1.8rem;
   color: var(--color-primario);
   display: flex;
@@ -357,12 +357,12 @@ body {
   gap: 1.6rem;
 }
 
-.plomero-icono {
+.plomero__icono {
   height: 3.4rem;
   width: 3.4rem;
 }
 
-/* -------------FOOTER------------- */
+/* -------------------------------FOOTER------------- */
 .footer {
   padding: 9.6rem 0;
   margin: 0 auto;
@@ -411,6 +411,9 @@ address {
 /* ----------media query---------- */
 
 @media (max-width: 1212px) {
+  html {
+    font-size: 56.25%;
+  }
   /* instalacion */
   .instalacion-flex {
     justify-content: center;
@@ -421,7 +424,7 @@ address {
   address {
     padding: 0 3.2rem;
   }
-  .producto-ul {
+  .producto__ul {
     grid-gap: 2.4rem;
   }
 }
@@ -501,7 +504,7 @@ address {
     height: auto;
     justify-content: end;
   }
-  .contacto-img {
+  .contacto__img {
     height: 55rem;
     grid-row: 1;
   }

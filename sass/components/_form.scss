@@ -51,3 +51,17 @@
     border-bottom: 3px solid red;
   }
 }
+
+@media only screen and (max-width: 43.75em) {
+  .contacto {
+    grid-template-columns: 1fr;
+    height: auto;
+    justify-content: end;
+    
+    &__img {
+    height: 55rem;
+    grid-row: 1;
+  }
+  }
+  
+}

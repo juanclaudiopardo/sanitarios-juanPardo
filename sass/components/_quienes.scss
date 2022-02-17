@@ -9,3 +9,10 @@
     width: 100%;
   }
 }
+
+@media only screen and (max-width: 56.25em) {
+    .quienes-somos {
+    grid-template-columns: 1fr;
+    gap: 3.2rem;
+  }
+}

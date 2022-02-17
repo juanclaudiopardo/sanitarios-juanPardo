@@ -47,3 +47,65 @@
 .icon-mov-nav[name="close-outline"] {
   display: none;
 }
+
+@media only screen and (max-width: 56.25em){
+  .btn-mov-nav {
+    display: block;
+    z-index: 9999;
+  }
+  .navegador {
+    background-color: rgba(255, 255, 255, 0.9);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(10px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    transform: translateX(100%);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease-in;
+    position: fixed;
+    opacity: 0;
+
+    pointer-events: none;
+
+    visibility: hidden;
+  }
+
+  .nav-abierto .navegador {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+  }
+
+  .nav-abierto .icon-mov-nav[name="close-outline"] {
+    display: block;
+  }
+
+  .nav-abierto .icon-mov-nav[name="menu-outline"] {
+    display: none;
+  }
+
+  .navegador__ul {
+    flex-direction: column;
+    gap: 4.8rem;
+
+    &--link:link,
+    &--link:visited {
+    font-size: 3rem;
+  }
+  }
+  
+}
+
+@media only screen and (max-width: 31.25em) {
+  
+  .logo {
+    height: 4.2rem;
+  }
+}

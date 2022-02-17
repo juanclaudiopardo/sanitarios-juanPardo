@@ -1,6 +1,7 @@
 /* font-family: 'Rubik', sans-serif; 
               "lato" */
 
+/* ----------------------------VARIABLES */
 :root {
   --color-primario: #8b1212;
   --color-primario-hoover: #b97171;
@@ -30,6 +31,10 @@ body {
   font-family: "Rubik", sans-serif;
   overflow-x: hidden;
   line-height: 1.6;
+}
+::selection {
+  background-color: var(--color-primario);
+  color: #fff;
 }
 
 /* ------------------------------TIPOGRAFIA ----------------*/
@@ -208,7 +213,7 @@ body {
 .contacto {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  background-color: var(--color-primario-contacto);
+  background-image: linear-gradient(to right bottom, var(--color-primario-contacto), var(--color-primario-claro));
   border-radius: 11px;
   box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.05);
 
@@ -277,6 +282,7 @@ body {
   background-image: url("../imagenes\ del\ negocio/contacto.webp");
   background-size: cover;
   background-position: center;
+  background-image: linear-gradient(to right bottom, rgba(209, 160, 160, 0.3), rgba(243, 231, 231, 0.3)), url("../imagenes\ del\ negocio/contacto.webp");
 }
 
 /* ------------------------------PRODUCTO---------- */
@@ -351,15 +357,16 @@ body {
 }
 .plomero__li {
   font-size: 1.8rem;
-  color: var(--color-primario);
+  color: var(--color-gris);
   display: flex;
   align-items: center;
   gap: 1.6rem;
 }
 
 .plomero__icono {
-  height: 3.4rem;
-  width: 3.4rem;
+  height: 2.4rem;
+  width: 2.4rem;
+  color: var(--color-primario);
 }
 
 /* -------------------------------FOOTER------------- */
@@ -374,8 +381,8 @@ address {
   padding: 0 9.6rem;
 }
 
-.link-info:link,
-.link-info:visited {
+.footer__info:link,
+.footer__info:visited {
   text-decoration: none;
   color: var(--color-gris-claro);
   margin-bottom: 1.2rem;
@@ -383,12 +390,12 @@ address {
   font-size: 1.8rem;
 }
 
-.link-info:hover,
-.link-info:active {
+.footer__info:hover,
+.footer__info:active {
   color: var(--color-primario);
 }
 
-.redes-sociales-lista {
+.footer__ul {
   display: flex;
   gap: 1.6rem;
   justify-content: center;
@@ -396,21 +403,22 @@ address {
   list-style: none;
 }
 
-.icono-redes {
+.footer__icono {
   height: 5rem;
   width: 5rem;
   color: var(--color-gris-claro);
   transition: all 0.3s;
 }
 
-.icono-redes:hover {
+.footer__icono:hover {
   color: var(--color-primario);
   transform: translateY(-2rem);
 }
 
-/* ----------media query---------- */
+/* -----------------------------MEDIA QUERY---------- */
 
-@media (max-width: 1212px) {
+@media only screen and (max-width: 75.75em) {
+  /* 1212px */
   html {
     font-size: 56.25%;
   }
@@ -429,7 +437,8 @@ address {
   }
 }
 
-@media (max-width: 900px) {
+@media only screen and (max-width: 56.25em) {
+  /* 900 px */
   html {
     font-size: 50%;
   }
@@ -498,7 +507,8 @@ address {
   }
 }
 
-@media (max-width: 700px) {
+@media only screen and (max-width: 43.75em) {
+  /* 700px */
   .contacto {
     grid-template-columns: 1fr;
     height: auto;
@@ -514,14 +524,23 @@ address {
   }
 }
 
-@media (max-width: 600px) {
+@media only screen and (max-width: 37.5em) {
+  /* 600px */
   .titulo-primario-principal,
   .titulo-primario-sub {
     letter-spacing: 1.5rem;
   }
+  .section-quienesSomos,
+  .section-producto,
+  .section-instalacion,
+  .section-contacto,
+  .section-plomero {
+    padding: 4.8rem 0rem;
+  }
 }
 
-@media (max-width: 500px) {
+@media only screen and (max-width: 31.25em) {
+  /* 500px */
   .section-producto {
     display: grid;
     grid-column: 1fr;

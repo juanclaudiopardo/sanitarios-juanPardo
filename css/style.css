@@ -167,7 +167,7 @@ body {
 .navegador__link:visited {
   text-decoration: none;
   font-weight: 500;
-  font-size: 1.8rem;
+  font-size: 2rem;
   color: var(--color-primario);
   transition: all 0.4s;
 }
@@ -375,7 +375,7 @@ body {
   margin: 0 auto;
   background-color: white;
 }
-address {
+.footer__address {
   display: flex;
   flex-direction: column;
   padding: 0 9.6rem;
@@ -417,8 +417,8 @@ address {
 
 /* -----------------------------MEDIA QUERY---------- */
 
+/* 1212px */
 @media only screen and (max-width: 75.75em) {
-  /* 1212px */
   html {
     font-size: 56.25%;
   }
@@ -437,8 +437,8 @@ address {
   }
 }
 
+/* 900 px */
 @media only screen and (max-width: 56.25em) {
-  /* 900 px */
   html {
     font-size: 50%;
   }
@@ -507,8 +507,8 @@ address {
   }
 }
 
+/* 700px */
 @media only screen and (max-width: 43.75em) {
-  /* 700px */
   .contacto {
     grid-template-columns: 1fr;
     height: auto;
@@ -524,8 +524,8 @@ address {
   }
 }
 
+/* 600px */
 @media only screen and (max-width: 37.5em) {
-  /* 600px */
   .titulo-primario-principal,
   .titulo-primario-sub {
     letter-spacing: 1.5rem;
@@ -539,8 +539,8 @@ address {
   }
 }
 
+/* 500px */
 @media only screen and (max-width: 31.25em) {
-  /* 500px */
   .section-producto {
     display: grid;
     grid-column: 1fr;

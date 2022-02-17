@@ -1,0 +1,11 @@
+.quienes-somos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+  align-items: center;
+  gap: 9.6rem;
+  &__img {
+    width: 100%;
+  }
+}

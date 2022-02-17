@@ -1,0 +1,161 @@
+@import "abstracts/variables";
+
+@import "base/animation";
+@import "base/base";
+@import "base/typography";
+@import "base/utilities";
+
+@import "components/form";
+@import "components/button";
+@import "components/plomero";
+@import "components/producto";
+@import "components/quienes";
+@import "components/principal";
+@import "components/instalacion";
+
+
+@import "layout/footer";
+@import "layout/navigation";
+
+@import "pages/home";
+
+
+
+/* -----------------------------MEDIA QUERY---------- */
+
+/* 1212px */
+@media only screen and (max-width: 75.75em) {
+  html {
+    font-size: 56.25%;
+  }
+  /* instalacion */
+  .instalacion-flex {
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+  }
+  /* footer */
+  address {
+    padding: 0 3.2rem;
+  }
+  .producto__ul {
+    grid-gap: 2.4rem;
+  }
+}
+
+/* 900 px */
+@media only screen and (max-width: 56.25em) {
+  html {
+    font-size: 50%;
+  }
+
+  /* index */
+  .quienes-somos {
+    grid-template-columns: 1fr;
+    gap: 3.2rem;
+  }
+
+  .parrafo-principal {
+    margin-bottom: 2.4rem;
+  }
+  .btn-mov-nav {
+    display: block;
+    z-index: 9999;
+  }
+  .navegador {
+    background-color: rgba(255, 255, 255, 0.9);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(10px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    transform: translateX(100%);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease-in;
+    position: fixed;
+    opacity: 0;
+
+    pointer-events: none;
+
+    visibility: hidden;
+  }
+
+  .nav-abierto .navegador {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+  }
+
+  .nav-abierto .icon-mov-nav[name="close-outline"] {
+    display: block;
+  }
+
+  .nav-abierto .icon-mov-nav[name="menu-outline"] {
+    display: none;
+  }
+
+  .navegador__ul {
+    flex-direction: column;
+    gap: 4.8rem;
+  }
+  .navegador__link:link,
+  .navegador__link:visited {
+    font-size: 3rem;
+  }
+  .header-img {
+    clip-path: none;
+  }
+}
+
+/* 700px */
+@media only screen and (max-width: 43.75em) {
+  .contacto {
+    grid-template-columns: 1fr;
+    height: auto;
+    justify-content: end;
+  }
+  .contacto__img {
+    height: 55rem;
+    grid-row: 1;
+  }
+  .footer__list {
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+}
+
+/* 600px */
+@media only screen and (max-width: 37.5em) {
+  .titulo-primario-principal,
+  .titulo-primario-sub {
+    letter-spacing: 1.5rem;
+  }
+  .section-quienesSomos,
+  .section-producto,
+  .section-instalacion,
+  .section-contacto,
+  .section-plomero {
+    padding: 4.8rem 0rem;
+  }
+}
+
+/* 500px */
+@media only screen and (max-width: 31.25em) {
+  .section-producto {
+    display: grid;
+    grid-column: 1fr;
+  }
+  .logo {
+    height: 4.2rem;
+  }
+  .titulo-primario-principal,
+  .titulo-primario-sub {
+    font-size: 4rem;
+  }
+}

@@ -1,0 +1,46 @@
+.footer {
+  padding: 9.6rem 0;
+  margin: 0 auto;
+  background-color: $color-white;
+
+  &__address {
+    display: flex;
+    flex-direction: column;
+    padding: 0 9.6rem;
+  }
+
+  &__info:link,
+  &__info:visited {
+    text-decoration: none;
+    color: $color-gris-claro;
+    margin-bottom: 1.2rem;
+    transition: all 0.4s;
+    font-size: 1.8rem;
+  }
+
+  &__info:hover,
+  &__info:active {
+    color: $color-primario;
+  }
+
+  &__ul {
+    display: flex;
+    gap: 1.6rem;
+    justify-content: center;
+    margin-top: 4.8rem;
+    list-style: none;
+  }
+
+  &__icono {
+    height: 5rem;
+    width: 5rem;
+    color: $color-gris-claro;
+    transition: all 0.3s;
+  }
+
+  &__icono:hover {
+    color: $color-primario;
+    transform: translateY(-2rem);
+  }
+  
+}

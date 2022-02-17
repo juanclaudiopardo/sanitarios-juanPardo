@@ -1,0 +1,41 @@
+.plomero-flex {
+  display: grid;
+  padding-top: 3.4rem;
+  padding-bottom: 6.4rem;
+  gap: 6.4rem;
+  align-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+}
+.plomero {
+  background-color: $color-white;
+  border-radius: 11px;
+  overflow: hidden;
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+
+  &__contenedor {
+    padding: 3.2rem;
+  }
+  &__img {
+    margin-bottom: 1.6rem;
+    width: 100%;
+  }
+  &__ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+  }
+  &__li {
+    font-size: 1.8rem;
+    color: $color-gris;
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+  }
+
+  &__icono {
+    height: 2.4rem;
+    width: 2.4rem;
+    color: $color-primario;
+  }
+}

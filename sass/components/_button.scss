@@ -1,0 +1,17 @@
+.boton {
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 1.6rem 3.2rem;
+  border-radius: 9px;
+  border: none;
+  cursor: pointer;
+  background-color: $color-primario;
+  color: $color-white;
+  transition: all 0.4s;
+  width: 100%;
+
+  &:hover {
+    background-color: $color-white;
+    color: var(--color-primario);
+  }
+}

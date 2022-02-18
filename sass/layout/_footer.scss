@@ -34,15 +34,14 @@
   &__icono {
     height: 5rem;
     width: 5rem;
-    color: $color-gris-claro;
+    fill: $color-gris-claro;
     transition: all 0.3s;
   }
 
   &__icono:hover {
-    color: $color-primario;
+    fill: $color-primario;
     transform: translateY(-2rem);
   }
-  
 }
 
 @media only screen and (max-width: 75.75em) {

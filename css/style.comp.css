@@ -172,7 +172,7 @@ body {
   .plomero__icono {
     height: 2.4rem;
     width: 2.4rem;
-    color: #8b1212; }
+    fill: #8b1212; }
 
 .producto__ul {
   display: grid;
@@ -305,10 +305,10 @@ body {
   .footer__icono {
     height: 5rem;
     width: 5rem;
-    color: #767676;
+    fill: #767676;
     transition: all 0.3s; }
   .footer__icono:hover {
-    color: #8b1212;
+    fill: #8b1212;
     transform: translateY(-2rem); }
 
 @media only screen and (max-width: 75.75em) {

@@ -14,6 +14,7 @@
     <title>Plomeros</title>
   </head>
   <body>
+    <!-- ------------------------------NAVEGADOR -->
     <header class="header">
       <div>
         <a href="index.html">
@@ -33,15 +34,7 @@
       <button class="btn-mov-nav"><ion-icon class="icon-mov-nav" name="menu-outline"></ion-icon> <ion-icon class="icon-mov-nav" name="close-outline"></ion-icon></button>
     </header>
 
-    <script>
-      const btnNavEl = document.querySelector(".btn-mov-nav");
-      const headerEl = document.querySelector(".header");
-
-      btnNavEl.addEventListener("click", function () {
-        headerEl.classList.toggle("nav-abierto");
-      });
-    </script>
-
+    <!-- ----------------------------SECCION PLOMEROS -->
     <section class="section-plomero">
       <h1 class="titulo-principal">Plomeros.</h1>
       <p class="parrafo-principal">En esta seccion te recomendaremos plomeros de confianza que podran solucionarte el problema que tengas</p>
@@ -58,6 +51,7 @@
             </ul>
           </div>
         </div>
+
         <div class="plomero">
           <img src="plomeros/plomero2.jpg" alt="foto de un plomero" class="plomero__img" />
           <div class="plomero__contenedor">
@@ -69,6 +63,7 @@
             </ul>
           </div>
         </div>
+
         <div class="plomero">
           <img src="plomeros/plomero3.jpg" alt="foto de un plomero" class="plomero__img" />
           <div class="plomero__contenedor">
@@ -80,6 +75,7 @@
             </ul>
           </div>
         </div>
+
         <div class="plomero">
           <img src="plomeros/plomero4.jpg" alt="foto de un plomero" class="plomero__img" />
           <div class="plomero__contenedor">
@@ -91,6 +87,7 @@
             </ul>
           </div>
         </div>
+
         <div class="plomero">
           <img src="plomeros/plomero5.jpg" alt="foto de un plomero" class="plomero__img" />
           <div class="plomero__contenedor">
@@ -102,6 +99,7 @@
             </ul>
           </div>
         </div>
+
         <div class="plomero">
           <img src="plomeros/plomero6.jpg" alt="foto de un plomero" class="plomero__img" />
           <div class="plomero__contenedor">
@@ -115,7 +113,7 @@
         </div>
       </div>
     </section>
-
+    <!-- ------------------------------------FOOTER -->
     <footer class="footer">
       <address class="footer__address">
         <a href="tel:4-262-6106" class="footer__info">Tel: 4-262-6104</a>
@@ -133,5 +131,14 @@
         </li>
       </ul>
     </footer>
+    <!-- -----------------------------BTN NAV SCRIPT------------------------- -->
+    <script>
+      const btnNavEl = document.querySelector(".btn-mov-nav");
+      const headerEl = document.querySelector(".header");
+
+      btnNavEl.addEventListener("click", function () {
+        headerEl.classList.toggle("nav-abierto");
+      });
+    </script>
   </body>
 </html>

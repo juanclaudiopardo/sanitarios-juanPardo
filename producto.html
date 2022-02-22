@@ -14,6 +14,7 @@
     <title>Productos</title>
   </head>
   <body>
+    <!-- ----------------------------NAVEGADOR -->
     <header class="header">
       <div>
         <a href="index.html">
@@ -32,19 +33,10 @@
 
       <button class="btn-mov-nav"><ion-icon class="icon-mov-nav" name="menu-outline"></ion-icon> <ion-icon class="icon-mov-nav" name="close-outline"></ion-icon></button>
     </header>
-
-    <script>
-      const btnNavEl = document.querySelector(".btn-mov-nav");
-      const headerEl = document.querySelector(".header");
-
-      btnNavEl.addEventListener("click", function () {
-        headerEl.classList.toggle("nav-abierto");
-      });
-    </script>
-
+    <!-- --------------------------SECCION PRODUCTOS -->
     <section class="section-producto">
       <h1 class="titulo-principal padding-tit">Productos.</h1>
-      <p class="parrafo-principal mrg-mayor">Conoce nuestros productos.</p>
+      <p class="parrafo-principal mrg-mayor">Conoce las marcas de nuestros productos que trabajamos.</p>
       <ul class="producto__ul">
         <li class="producto__ul--link">
           <a href="https://www.industriassaladillo.com.ar/fp-productos/desagues/awaduct.php" target="_blank"><img src="productos/awaduct.jpeg" alt="logo de awaduct" class="producto__ul--img" /></a>
@@ -78,7 +70,7 @@
         </li>
       </ul>
     </section>
-
+    <!-- --------------------------------FOOTER -->
     <footer class="footer">
       <address class="footer__address">
         <a href="tel:4-262-6106" class="footer__info">Tel: 4-262-6104</a>
@@ -96,5 +88,14 @@
         </li>
       </ul>
     </footer>
+    <!-- -----------------------------BTN NAV SCRIPT------------------------- -->
+    <script>
+      const btnNavEl = document.querySelector(".btn-mov-nav");
+      const headerEl = document.querySelector(".header");
+
+      btnNavEl.addEventListener("click", function () {
+        headerEl.classList.toggle("nav-abierto");
+      });
+    </script>
   </body>
 </html>

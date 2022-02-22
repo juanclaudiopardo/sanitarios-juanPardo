@@ -9,12 +9,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet" />
-
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <title>Contacto</title>
   </head>
   <body>
+    <!------------------------------  NAVEGADOR------------------------------ -->
     <header class="header">
       <div>
         <a href="index.html">
@@ -33,18 +33,9 @@
 
       <button class="btn-mov-nav"><ion-icon class="icon-mov-nav" name="menu-outline"></ion-icon> <ion-icon class="icon-mov-nav" name="close-outline"></ion-icon></button>
     </header>
-
-    <script>
-      const btnNavEl = document.querySelector(".btn-mov-nav");
-      const headerEl = document.querySelector(".header");
-
-      btnNavEl.addEventListener("click", function () {
-        headerEl.classList.toggle("nav-abierto");
-      });
-    </script>
-
+    <!-- ---------------------- SECCION CONTACTO------------------------------ -->
     <section class="section-contacto">
-      <h2 class="titulo-principal">Contacto.</h2>
+      <h1 class="titulo-principal">Contacto.</h1>
       <p class="parrafo-principal">Cualquier duda, o consulta por presupuesto,completa el formulario que nos estaremos comunicando a la brevedad.</p>
       <div class="contacto">
         <div class="contacto__texto">
@@ -55,22 +46,19 @@
             </div>
             <div>
               <label for="email">*Correo electrónico</label>
-
               <input id="email" type="email" placeholder="Ejemplo@yahoo.com.ar" required />
             </div>
             <div>
               <label for="mensaje">Mensaje</label>
-
               <textarea name="mensaje" cols="30" rows="10" placeholder="Escriba algo..."></textarea>
             </div>
-
             <button class="boton">Enviar</button>
           </form>
         </div>
         <div class="contacto__img" role="img" aria-label="un dibujo de una persona hablando por telefono"></div>
       </div>
     </section>
-
+    <!-- ----------------------------------FOOTER---------------------------------- -->
     <footer class="footer">
       <address class="footer__address">
         <a href="tel:4-262-6106" class="footer__info">Tel: 4-262-6104</a>
@@ -78,7 +66,6 @@
         <a href="mailto:josefrecinosanitarios@yahoo.com.ar" class="footer__info">E-mail: josefrecinosanitarios@yahoo.com.ar</a>
         <a href="https://goo.gl/maps/q3FpLWMQQAcH5jaAA" class="footer__info" target="_blank">Direccion: Mendoza 2629 Lanus oeste</a>
       </address>
-
       <ul class="footer__ul">
         <li>
           <a href="https://www.instagram.com/?hl=es-la" target="_blank"><svg class="footer__icono"><use xlink:href="plomeros/sprite.svg#icon-instagram"</svg></a>
@@ -88,5 +75,14 @@
         </li>
       </ul>
     </footer>
+    <!-- -----------------------------BTN NAV SCRIPT------------------------- -->
+    <script>
+      const btnNavEl = document.querySelector(".btn-mov-nav");
+      const headerEl = document.querySelector(".header");
+
+      btnNavEl.addEventListener("click", function () {
+        headerEl.classList.toggle("nav-abierto");
+      });
+    </script>
   </body>
 </html>

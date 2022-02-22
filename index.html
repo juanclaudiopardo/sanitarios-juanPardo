@@ -4,52 +4,45 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-     <link rel="shortcut icon" href="imagenes del negocio/Copia de flavicon.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="imagenes del negocio/Copia de flavicon.png" type="image/x-icon" />
     <link rel="stylesheet" href="css/style.css" />
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet" />
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <title>Document</title>
   </head>
   <body>
+    <!-- ---------------------------ANIMACION---------------------------- -->
     <header class="header-img">
       <div class="header__texto">
-        <h1 class="titulo--primario"><span class="titulo-primario-principal">Sanitarios</span> <span class="titulo-primario-sub">Frecino</span></h1>
+        <h1 class="titulo--primario">
+          <span class="titulo-primario-principal">Sanitarios</span>
+          <span class="titulo-primario-sub">Frecino</span>
+        </h1>
       </div>
-      
       <div class="flex-header">
         <a href="index.html">
           <img src="imagenes del negocio/flavicon.png" alt="logo del negocio" class="logo" />
         </a>
-
+        <!-- -----------------------------NAVEGADOR--------------------------- -->
         <nav class="navegador">
-        <ul class="navegador__ul">
-          <li><a class="navegador__ul--link" href="quienes.html">Quienes somos</a></li>
-          <li><a class="navegador__ul--link" href="producto.html">Productos</a></li>
-          <li><a class="navegador__ul--link" href="plomeros.html">Plomeros</a></li>
-          <li><a class="navegador__ul--link" href="instalacion.html">Instalación</a></li>
-          <li><a class="navegador__ul--link" href="contacto.html">Contacto</a></li>
-        </ul>
-      </nav>
+          <ul class="navegador__ul">
+            <li><a class="navegador__ul--link" href="quienes.html">Quienes somos</a></li>
+            <li><a class="navegador__ul--link" href="producto.html">Productos</a></li>
+            <li><a class="navegador__ul--link" href="plomeros.html">Plomeros</a></li>
+            <li><a class="navegador__ul--link" href="instalacion.html">Instalación</a></li>
+            <li><a class="navegador__ul--link" href="contacto.html">Contacto</a></li>
+          </ul>
+        </nav>
 
         <button class="btn-mov-nav">
-        <ion-icon class="icon-mov-nav" name="menu-outline"></ion-icon>
-        <ion-icon class="icon-mov-nav" name="close-outline"></ion-icon>
-      </button>
-    </header>
-    <script>
-      const btnNavEl = document.querySelector(".btn-mov-nav");
-      const headerEl = document.querySelector(".header-img");
-
-      btnNavEl.addEventListener("click", function () {
-        headerEl.classList.toggle("nav-abierto");
-      });
-    </script>
+          <ion-icon class="icon-mov-nav" name="menu-outline"></ion-icon>
+          <ion-icon class="icon-mov-nav" name="close-outline"></ion-icon>
+        </button>
       </div>
-      
-    
-    
+    </header>
+    <!-- -------------------------------FOOTER----------------------------- -->
     <footer class="footer">
       <address class="footer__address">
         <a href="tel:4-262-6106" class="footer__info">Tel: 4-262-6104</a>
@@ -67,6 +60,14 @@
         </li>
       </ul>
     </footer>
-    
+    <!-- -----------------------------BTN NAV SCRIPT------------------------- -->
+    <script>
+      const btnNavEl = document.querySelector(".btn-mov-nav");
+      const headerEl = document.querySelector(".header-img");
+
+      btnNavEl.addEventListener("click", function () {
+        headerEl.classList.toggle("nav-abierto");
+      });
+    </script>
   </body>
 </html>

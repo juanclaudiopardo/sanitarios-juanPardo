@@ -288,6 +288,9 @@ body {
     display: flex;
     flex-direction: column;
     padding: 0 9.6rem; }
+    @media only screen and (max-width: 37.5em) {
+      .footer__address {
+        padding: 0rem 3rem; } }
   .footer__info:link, .footer__info:visited {
     text-decoration: none;
     color: #767676;
@@ -314,11 +317,6 @@ body {
 @media only screen and (max-width: 75.75em) {
   address {
     padding: 0 3.2rem; } }
-
-@media only screen and (max-width: 43.75em) {
-  .footer__list {
-    align-items: flex-start;
-    justify-content: flex-start; } }
 
 .header {
   display: flex;
@@ -416,7 +414,7 @@ body {
   .section-instalacion,
   .section-contacto,
   .section-plomero {
-    padding: 4.8rem 0rem; } }
+    padding: 4.8rem 3rem; } }
 
 @media only screen and (max-width: 31.25em) {
   .section-producto {

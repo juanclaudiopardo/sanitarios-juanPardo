@@ -57,11 +57,10 @@
     grid-template-columns: 1fr;
     height: auto;
     justify-content: end;
-    
+
     &__img {
-    height: 55rem;
-    grid-row: 1;
+      height: 55rem;
+      grid-row: 1;
+    }
   }
-  }
-  
 }

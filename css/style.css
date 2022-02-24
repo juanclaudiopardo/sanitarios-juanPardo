@@ -194,14 +194,13 @@ body {
     grid-gap: 2.4rem; } }
 
 .quienes-somos {
+  max-width: 130rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin: 0 auto;
   padding: 0 3.2rem;
-  align-items: center;
+  align-items: start;
   gap: 9.6rem; }
-  .quienes-somos__img {
-    width: 100%; }
 
 @media only screen and (max-width: 56.25em) {
   .quienes-somos {

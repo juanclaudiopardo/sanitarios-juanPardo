@@ -132,7 +132,7 @@ body {
   border-radius: 9px;
   border: none;
   cursor: pointer;
-  background-color: #8b1212;
+  background-color: red;
   color: #fff;
   transition: all 0.4s;
   width: 100%; }

@@ -1,4 +1,6 @@
 @import "abstracts/variables";
+@import "abstracts/mixin";
+@import "abstracts/map";
 
 @import "base/base";
 @import "base/animation";
@@ -13,13 +15,10 @@
 @import "components/principal";
 @import "components/instalacion";
 
-
 @import "layout/footer";
 @import "layout/navigation";
 
 @import "pages/home";
-
-
 
 /* -----------------------------MEDIA QUERY---------- */
 //1212px------75.75em//

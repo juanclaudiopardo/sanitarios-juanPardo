@@ -1,3 +1,9 @@
+.svgicono {
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden; }
+
 *,
 *::before,
 *::after {
@@ -132,7 +138,7 @@ body {
   border-radius: 9px;
   border: none;
   cursor: pointer;
-  background-color: red;
+  background-color: #8b1212;
   color: #fff;
   transition: all 0.4s;
   width: 100%; }

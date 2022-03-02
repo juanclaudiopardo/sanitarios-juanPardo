@@ -4,3 +4,10 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+@mixin svgico {
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}
